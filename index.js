@@ -10,7 +10,7 @@ function destructivelyUpdateDriverWithKeyAndValue(driver,key,value){
   driver[key] = value;
   return driver;
 }
-const driver2 = updateDriverWithKeyAndValue(driver,'name','John');
+const driver2 = destructivelyUpdateDriverWithKeyAndValue(driver,'name','John');
 console.log(driver);
 console.log(driver2);
 
